@@ -1,54 +1,34 @@
 import 'package:objectbox/objectbox.dart';
 
 @Entity()
-class Category{
-  @Id()
+class Category {
   int id;
-
   String name;
 
-  Category({
-    this.id = 0,
-    required this.name,
-  });
-
+  Category({this.id = 0, required this.name});
 }
 
 @Entity()
-class Transaction {
-  @Id()
+class TransactionModel {
   int id;
-
-  String name;           // e.g. "Grab Ride"
   double amount;
-  bool type;             // true = income, false = expense
-  DateTime date;
+  String info;
+  String category;
+  DateTime dateTime;
 
-  int categoryId;        // FK to Category
-  String note;
-
-  Transaction({
+  TransactionModel({
     this.id = 0,
-    required this.name,
     required this.amount,
-    required this.date,
-    required this.categoryId,
-    required this.type,
-    this.note = '',
+    required this.info,
+    required this.category,
+    required this.dateTime,
   });
 }
 
-
 @Entity()
-class Account{
-  @Id()
+class Budget {
   int id;
-  double balance;
-  bool isDefault;
+  double total;
 
-  Account({
-    this.id = 0,
-    required this.balance,
-    this.isDefault = false,
-  });
+  Budget({this.id = 0, this.total = 0});
 }
