@@ -13,8 +13,8 @@ An android app to set up a monthly budget and track the responding expenses
 ### 2. ️ Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/budget-tracker.git
-cd budget-tracker
+git clone https://github.com/michaelgrace72/WalletApp.git
+cd WalletApp
 ```
 
 ### 3. Install Dependencies
