@@ -34,7 +34,6 @@ class _AddTransactionPageState extends State<AddTransactionPage> {
     return Scaffold(
       appBar: AppBar(title: const Text('Add Transaction')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
         child: Form(
           key: _formKey,
           child: ListView(
